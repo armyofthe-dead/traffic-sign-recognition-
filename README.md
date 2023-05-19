@@ -23,9 +23,9 @@ import PIL
 
 import os
 
-from sklearn
+import sklearn
 
-from keras
+import keras
 
 # complilation steps
 
