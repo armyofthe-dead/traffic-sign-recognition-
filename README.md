@@ -1,36 +1,72 @@
-# traffic-sign-recognition-
+**Traffic Sign Recognition Application**
 
-this deep learning application is built for recognising  the traffic signs , and it also classifies traffic sign images and recognise the traffic sign from the given image 
+This repository contains code for a Traffic Sign Recognition application. The application uses deep learning techniques to classify traffic signs based on images.
+
+**Dependencies**
+
+Make sure you have the following dependencies installed:
+
+numpy
+
+pandas
+
+matplotlib
+
+cv2
+
+tensorflow
+
+PIL
+
+os
+
+sklearn
+
+keras
+
+tkinter
+
+**You can install the dependencies using the following command:**
+
+pip install numpy pandas matplotlib opencv-python tensorflow pillow scikit-learn keras
 
 
-An application which allows to detect traffic sign from realtime  form any image or even through Camera.
+**Dataset**
 
-It also show the label of the sign which sign it is whle detecting from camera.
+The application uses the German Traffic Sign Recognition Benchmark (GTSRB) dataset. The dataset contains 43 classes of traffic signs.
 
-# Requirements
 
-import cv2
+Download the dataset and extract it to a directory. Set the path to the training data directory in the code
 
-import numpy 
+path = os.path.join(cur_path, 'path_to_training_data_directory', str(i))
 
-import tensorflow
+***Training the Model***
 
-import pandas
+The code trains a Convolutional Neural Network (CNN) model on the traffic sign dataset.
 
-import matplotlib.pyplot 
+The model architecture consists of several convolutional layers, max pooling layers, dropout layers, and fully connected layers.
 
-import PIL 
+To train the model, run the code. The trained model will be saved as my_model.h5.
 
-import os
+**Testing the Model**
 
-import sklearn
+The code includes a section for testing the accuracy of the trained model on a separate test dataset. The test dataset should be in CSV format, with the "ClassId" and "Path" columns specifying the labels and file paths of the test images, respectively.
 
-import keras
+Set the path to the test dataset CSV file in the code:
 
-# complilation steps
+y_test = pd.read_csv('path_to_test_dataset.csv')
 
-install the required libraries in your system
+To test the accuracy of the model, run the code. The accuracy score will be printed.
 
-after downloading run trafficrecog.py file on local system
+**Running the GUI Application**
 
-the script will start running and the user can recognise traffic sign by using camera or images.
+The code includes a graphical user interface (GUI) application for traffic sign recognition. It allows you to upload an image and recognize the traffic sign present in the image.
+
+To run the GUI application, execute the code. A window will open, and you can click the "Upload an image" button to select an image for classification. The predicted traffic sign label will be displayed.
+
+Note: You need to provide the path to the trained model file (.h5) in the code:
+
+model = load_model('path_to_trained_model.h5')
+
+the file for model is model.py  and file for GUI is graphic.py
+
