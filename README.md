@@ -70,3 +70,10 @@ model = load_model('path_to_trained_model.h5')
 
 the file for model is model.py  and file for GUI is graphic.py
 
+**app will recognize the traffic sign as follows**
+
+![Screenshot (41)](https://github.com/armyofthe-dead/traffic-sign-recognition-/assets/129574484/35f458b0-d633-4754-95be-fa1c7ce1ee79)
+![Screenshot (42)](https://github.com/armyofthe-dead/traffic-sign-recognition-/assets/129574484/e8b48d3f-11dc-4015-aba6-61702e4a93ed)
+![Screenshot (43)](https://github.com/armyofthe-dead/traffic-sign-recognition-/assets/129574484/caa1ea9f-f708-4f6a-8d6e-0c225384c7d3)
+
+
